@@ -1,0 +1,109 @@
+$yellow: #efd592;
+
+*, 
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  background-color: rgb(75, 160, 100);
+  width: 100%;
+  overflow: hidden;
+}
+
+#ham {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+
+#hambi {
+  background-color: black;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+h1 {
+  position: relative;
+  left: 30%;
+  top: 30px;
+  color: white;
+  font-size: 5em;
+}
+
+#main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100vw;
+  padding: 80px 180px;
+}
+
+.box {
+  width: 400px;
+  height: 700px;
+}
+
+.innerbox {
+  width: 100%;
+  height: 80%;
+  background-color: black;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}
+
+.light {
+  background-color: white;
+  color: black;
+}
+
+h4 {
+  color: $yellow;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+#imgcont {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    height: 180px;
+   
+  }
+}
+
+@media (max-width: 768px) {
+  #root {
+    overflow-y: auto;
+  }
+  
+  h1 {
+    left: 10%;
+    top: 60px;
+    font-size: 1.5em;
+  }
+
+  #main {
+    padding: 50px;
+    margin-top: 50px;
+  }
+
+  p {
+    font-size: 1.1em;
+  }
+}
